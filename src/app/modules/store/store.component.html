@@ -1,1 +1,8 @@
-<p>store works!</p>
+<div class="store-container flex flex-col pt-10">
+  @for( product of products(); track product.id ) {
+
+  <span class="cursor-pointer mb-4" (click)="addOrRemoveForCar(product.id)">
+    {{ product.title }} ({{ product.price }})
+  </span>
+  }
+</div>
