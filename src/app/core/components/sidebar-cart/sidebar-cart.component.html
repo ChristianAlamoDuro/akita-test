@@ -1,5 +1,7 @@
 @if (cartState(); as cartState ) {
-<div class="sidebar-container pt-10 pl-10 bg-red-200 w-96 flex flex-col">
+<div
+  class="sidebar-container absolute h-full right-0 pt-10 pl-10 bg-red-200 w-96 flex flex-col"
+>
   @if(productsInCart()?.length;) { @for(product of productsInCart(); track
   product.id) {
   <p class="[&:not(:first-child)]:pt-4">

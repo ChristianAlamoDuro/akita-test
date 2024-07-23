@@ -1,5 +1,0 @@
-.sidebar-container {
-  position: absolute;
-  right: 0;
-  height: calc(100vh - 88px); /* 88px is the height of the header */
-}

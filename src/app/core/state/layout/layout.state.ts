@@ -7,7 +7,7 @@ export interface LayoutState {
 
 export function createInitialState(): LayoutState {
   return {
-    showCart: true,
+    showCart: false,
   };
 }
 

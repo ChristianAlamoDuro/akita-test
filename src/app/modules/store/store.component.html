@@ -1,8 +1,18 @@
-<div class="store-container flex flex-col pt-10">
+<section class="store-container flex flex-wrap pt-10 sm:gap-x-[2px]">
   @for( product of products(); track product.id ) {
-
-  <span class="cursor-pointer mb-4" (click)="addOrRemoveForCar(product.id)">
-    {{ product.title }} ({{ product.price }})
-  </span>
+  <div
+    class="product cursor-pointer lg:w-[calc(20%-2px)] md:w-[calc(25%-2px)] w-[calc(50%-1px)] bg-white mb-5"
+    (click)="addOrRemoveForCar(product.id)"
+  >
+    <div
+      class="product-image p-10 flex justify-center border-b-[1px] border-b-gray-500"
+    >
+      <img class="h-52" [src]="product.image" alt="" />
+    </div>
+    <div class="product-information p-10">
+      <p class="overflow-hidden font-bold truncate w-32">{{ product.title }}</p>
+      <p>{{ product.price }} €</p>
+    </div>
+  </div>
   }
-</div>
+</section>
