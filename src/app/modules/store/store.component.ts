@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit, Signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { Product } from '../../state/product/product.model';
-import { ProductQuery } from '../../state/product/product.query';
-import { ProductService } from '../../state/product/product.service';
-import { ProductStore } from '../../state/product/product.state';
+import { Product } from '../../core/state/product/product.model';
+import { ProductQuery } from '../../core/state/product/product.query';
+import { ProductService } from '../../core/state/product/product.service';
+import { ProductStore } from '../../core/state/product/product.state';
 
 @Component({
   selector: 'app-store',

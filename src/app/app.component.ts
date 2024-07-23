@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './core/header/header.component';
-import { SidebarCartComponent } from './core/sidebar-cart/sidebar-cart.component';
+import { HeaderComponent } from './core/components/header/header.component';
+import { SidebarCartComponent } from './core/components/sidebar-cart/sidebar-cart.component';
 
 @Component({
   selector: 'app-root',

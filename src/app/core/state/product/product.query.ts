@@ -15,6 +15,7 @@ export class ProductQuery extends QueryEntity<ProductState> {
       let productsInCart: Product[] = [];
       state.productsInCart.forEach((id) => {
         const product = this.getEntity(id);
+
         if (product) {
           productsInCart.push(product);
         }
